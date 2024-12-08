@@ -1,6 +1,6 @@
 # Report XLSX Template for Odoo
 
-This Odoo module allows generating XLSX reports for employees through a wizard. Users can select an employee and generate a report that is automatically downloaded with a meaningful name.
+This Odoo module allows generating XLSX reports for employees through a wizard using a xlsx file template. Users can select an employee and generate a report that is automatically downloaded with a meaningful name.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ This Odoo module allows generating XLSX reports for employees through a wizard. 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your_username/report_xlsx_template.git
+   git clone https://github.com/rafabcuba/report_xlsx_template.git
    ```
 
 2. **Copy the module to Odoo's addons directory**:
