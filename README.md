@@ -77,9 +77,9 @@ pip install openpyxl
 
 If you wish to contribute to this module, feel free to open an issue or submit a pull request on GitHub.
 
-## License
+## License  
 
-This module is licensed under the [MIT License](LICENSE).
+This project is licensed under the GNU Lesser General Public License v3.0. See the [LICENSE](LICENSE) file for more details.
 
 ## Support
 
