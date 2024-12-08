@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+        <record id="action_wizard_report_xlsx" model="ir.actions.act_window">
+            <field name="name">XLSX Report</field>
+            <field name="res_model">wizard.report.xlsx</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_hr_sample_reports" name="Sample reports" parent="hr.menu_hr_root" sequence="30"/>
+        <menuitem id="menu_hr_xlsx_report" name="XLSX Report" parent="menu_hr_sample_reports" action="action_wizard_report_xlsx"/>
+
+        <record id="view_wizard_report_xlsx" model="ir.ui.view">
+            <field name="name">wizard.report.xlsx.form</field>
+            <field name="model">wizard.report.xlsx</field>
+            <field name="arch" type="xml">
+                <form string="Generate XLSX Report">
+                    <group>
+                        <field name="employee_id" placeholder="Select an Employee" required="1"/>
+                    </group>
+                    <footer>
+                        <button string="Generate Report" type="object" name="action_generate_report" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
